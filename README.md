@@ -119,31 +119,8 @@ These notebooks are useful for understanding the project evolution and for exper
 - An Anthropic API key for Claude access
 - A working virtual environment is recommended
 
-### Install dependencies
 
-```bash
-pip install streamlit anthropic python-dotenv pokerkit matplotlib
-```
 
-If you are using the notebooks, also install Jupyter:
-
-```bash
-pip install jupyter
-```
-
-### Environment configuration
-
-For the LLM-based flows, set your Anthropic API key in a `.env` file or export it in your shell:
-
-```bash
-export ANTHROPIC_API_KEY="your_api_key_here"
-```
-
-Or in `.env`:
-
-```env
-ANTHROPIC_API_KEY=your_api_key_here
-```
 
 ## How It Works
 
@@ -185,10 +162,6 @@ python src/evals.py
 - The repo includes multiple prototypes and notebooks, so the architecture may be more exploratory than fully standardized.
 - The project is best used as a learning and experimentation platform for LLM-powered decision-making in poker.
 
-## License
-
-This repository does not currently include a license file. If you plan to distribute or reuse this project publicly, add an appropriate open-source license before doing so.
-
 ## Future Improvements
 
 Potential next steps include:
@@ -200,12 +173,3 @@ Potential next steps include:
 - stronger validation and testing of action logic
 - caching or batching of LLM calls
 
-## Contributing
-
-This repo is a personal or experimental project, but contributions are welcome if you want to improve memory systems, modeling quality, or the simulation workflow.
-
-## Project Status
-
-Status: active research / prototype
-
-The repository demonstrates a working concept for an LLM-powered poker agent with layered memory and interactive visualization, but it is still best described as a research prototype rather than a fully complete poker engine.
